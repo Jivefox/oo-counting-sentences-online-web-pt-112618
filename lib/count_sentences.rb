@@ -15,7 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split
-    self.match(/[.?!]/) ? true : false
+    self.scan(/[.?!]+/).count
   end
 end
